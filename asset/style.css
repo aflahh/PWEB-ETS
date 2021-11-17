@@ -1,0 +1,66 @@
+      body {
+          font-family: "Montserrat";
+      }
+
+      #profpic {
+          border-radius: 50%;
+      }
+
+      html {
+          scroll-behavior: smooth;
+      }
+
+      .wrapper {
+          width: 100%;
+          height: 100vh;
+          overflow-y: scroll;
+          scroll-snap-type: y mandatory;
+      }
+
+      .child {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          scroll-snap-align: start;
+      }
+
+      #home {
+          background-image: url(https://media.giphy.com/media/kDkNFlVyQXfSNSv1AE/source.gif);
+          background-size: cover;
+      }
+
+      #profile,
+      #skills,
+      #contact {
+          background-image: url(https://source.unsplash.com/WuVnejweXBw/1600x900);
+          background-size: cover;
+      }
+
+      #navbar {
+          height: 10vh;
+          position: fixed;
+          top: -100px;
+          width: 100%;
+          transition: top 0.3s;
+      }
+
+      #navbar h1 {
+          font-family: "Cookie";
+          font-size: 2em;
+      }
+
+      #skills img {
+          padding: 10px;
+          padding-left: 20px;
+      }
+
+      #home h1 {
+          font-size: 4em;
+      }
+
+      #scrolltext {
+          position: static;
+          bottom: 10px;
+      }
